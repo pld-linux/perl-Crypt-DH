@@ -6,7 +6,8 @@ Summary(pl):	Modu³ Perla Crypt::DH - implementacja systemu wymiany kluczy Diffie
 Name:		perl-Crypt-DH
 Version:	0.03
 Release:	2
-License:	Artistic or GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	e0af4baf9d5c9089ca8f1ad316701a82
