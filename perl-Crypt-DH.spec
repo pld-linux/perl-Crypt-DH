@@ -5,14 +5,14 @@ Summary:	Crypt::DH Perl module - Diffie-Hellman key exchange system implementati
 Summary(pl):	Modu³ Perla Crypt::DH - implementacja systemu wymiany kluczy Diffie-Hellman
 Name:		perl-Crypt-DH
 Version:	0.03
-Release:	1
+Release:	2
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Crypt-Random >= 0.33
 BuildRequires:	perl-Math-Pari >= 2.001804
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-Crypt-Random >= 0.33
 Requires:	perl-Math-Pari >= 2.001804
 BuildArch:	noarch
@@ -36,7 +36,8 @@ prywatnych kluczy miêdzy stronami.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -51,5 +52,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README ToDo
-%{perl_sitelib}/Crypt/DH.pm
+%{perl_vendorlib}/Crypt/DH.pm
 %{_mandir}/man3/*
