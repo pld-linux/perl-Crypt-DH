@@ -2,7 +2,7 @@
 %define		pdir	Crypt
 %define		pnam	DH
 Summary:	Crypt::DH Perl module - Diffie-Hellman key exchange system implementation
-Summary(pl):	Modu³ Perla Crypt::DH - implementacja systemu wymiany kluczy Diffie-Hellman
+Summary(pl.UTF-8):   ModuÅ‚ Perla Crypt::DH - implementacja systemu wymiany kluczy Diffie-Hellman
 Name:		perl-Crypt-DH
 Version:	0.06
 Release:	0.1
@@ -27,12 +27,12 @@ on a shared secret key, known only to them. The secret is negotiated
 over an insecure network without the two parties ever passing the
 actual shared secret, or their private keys, between them.
 
-%description -l pl
+%description -l pl.UTF-8
 Crypt::DH to perlowa implementacja systemu wymiany kluczy
-Diffie-Hellman. Jest to algorytm, w którym dwie strony mog± zgodziæ
-siê na wspólny tajny klucz, znany tylko im. Klucz jest negocjowany po
-nie zabezpieczonej sieci bez przesy³ania w³a¶ciwego klucza ani
-prywatnych kluczy miêdzy stronami.
+Diffie-Hellman. Jest to algorytm, w ktÃ³rym dwie strony mogÄ… zgodziÄ‡
+siÄ™ na wspÃ³lny tajny klucz, znany tylko im. Klucz jest negocjowany po
+nie zabezpieczonej sieci bez przesyÅ‚ania wÅ‚aÅ›ciwego klucza ani
+prywatnych kluczy miÄ™dzy stronami.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
