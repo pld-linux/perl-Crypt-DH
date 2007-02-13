@@ -2,7 +2,7 @@
 %define		pdir	Crypt
 %define		pnam	DH
 Summary:	Crypt::DH Perl module - Diffie-Hellman key exchange system implementation
-Summary(pl.UTF-8):   Moduł Perla Crypt::DH - implementacja systemu wymiany kluczy Diffie-Hellman
+Summary(pl.UTF-8):	Moduł Perla Crypt::DH - implementacja systemu wymiany kluczy Diffie-Hellman
 Name:		perl-Crypt-DH
 Version:	0.06
 Release:	0.1
