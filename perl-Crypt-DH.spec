@@ -1,6 +1,6 @@
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Crypt
 %define		pnam	DH
+%include	/usr/lib/rpm/macros.perl
 Summary:	Crypt::DH Perl module - Diffie-Hellman key exchange system implementation
 Summary(pl.UTF-8):	Moduł Perla Crypt::DH - implementacja systemu wymiany kluczy Diffie-Hellman
 Name:		perl-Crypt-DH
@@ -11,10 +11,11 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	5494c91420bf77de4af808fcafb6c3ce
-BuildRequires:	perl-devel >= 1:5.8.0
+URL:		http://search.cpan.org/dist/Crypt-DH/
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.56
 BuildRequires:	perl-Math-BigInt >= 1.60
 BuildRequires:	perl-Math-BigInt-GMP >= 1.24
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-Math-BigInt >= 1.60
 Requires:	perl-Math-BigInt-GMP >= 1.24
