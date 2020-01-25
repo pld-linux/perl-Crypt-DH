@@ -1,6 +1,5 @@
 %define		pdir	Crypt
 %define		pnam	DH
-%include	/usr/lib/rpm/macros.perl
 Summary:	Crypt::DH Perl module - Diffie-Hellman key exchange system implementation
 Summary(pl.UTF-8):	Moduł Perla Crypt::DH - implementacja systemu wymiany kluczy Diffie-Hellman
 Name:		perl-Crypt-DH
